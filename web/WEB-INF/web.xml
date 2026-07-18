@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
+    <!-- El punto de entrada es el servlet SIndex, no un .jsp directo -->
+    <welcome-file-list>
+        <welcome-file>SIndex</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>SIndex</servlet-name>
+        <servlet-class>control.SIndex</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SIndex</servlet-name>
+        <url-pattern>/SIndex</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SLogin</servlet-name>
+        <servlet-class>control.SLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SLogin</servlet-name>
+        <url-pattern>/SLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SVerificar</servlet-name>
+        <servlet-class>control.SVerificar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SVerificar</servlet-name>
+        <url-pattern>/SVerificar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SAdmin</servlet-name>
+        <servlet-class>control.SAdmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SAdmin</servlet-name>
+        <url-pattern>/SAdmin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SAlumnos</servlet-name>
+        <servlet-class>control.SAlumnos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SAlumnos</servlet-name>
+        <url-pattern>/SAlumnos</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SMaterias</servlet-name>
+        <servlet-class>control.SMaterias</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SMaterias</servlet-name>
+        <url-pattern>/SMaterias</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SCalifs</servlet-name>
+        <servlet-class>control.SCalifs</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SCalifs</servlet-name>
+        <url-pattern>/SCalifs</url-pattern>
+    </servlet-mapping>
+
+</web-app>
